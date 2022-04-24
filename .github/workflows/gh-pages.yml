@@ -1,0 +1,41 @@
+name: GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch name to trigger deployment
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+
+      - name: configure git info
+        run: |
+          git config --global user.name "github-actions-for-deploy"
+          git config --global user.email deploy-actions@github.com
+
+      - name: check git status and branch
+        run: |
+          git status
+          git branch
+
+      - run: pip install -r requirements.txt
+      - run: cd memo && mkdocs build
+      - uses: peaceiris/actions-gh-pages@v3
+        with:
+          personal_token: ${{ secrets.PERSONAL_TOKEN }}
+          # publish_branch を指定しない場合、
+          # gh-pages ブランチにデプロイされます。
+          publish_dir: ./memo/site
