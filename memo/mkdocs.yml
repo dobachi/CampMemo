@@ -1,0 +1,5 @@
+site_name: キャンプ関連のメモ
+site_url: https://dobachi.github.io/campmemo
+nav:
+  - トップ: index.md
+  - 道具類: tools.md
