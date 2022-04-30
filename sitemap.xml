@@ -6,6 +6,16 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dobachi.github.io/campmemo/campsite/</loc>
+         <lastmod>2022-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://dobachi.github.io/campmemo/tips/</loc>
+         <lastmod>2022-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dobachi.github.io/campmemo/tools/</loc>
          <lastmod>2022-04-30</lastmod>
          <changefreq>daily</changefreq>
