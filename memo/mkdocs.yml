@@ -3,3 +3,5 @@ site_url: https://dobachi.github.io/campmemo
 nav:
   - トップ: index.md
   - 道具類: tools.md
+  - キャンプ場: campsite.md
+  - Tips: tips.md
