@@ -7,6 +7,7 @@
 ## 火器
 
 * [アルコールバーナー](tools/alcohol_burner.md)
+* [スキットル](tools/hip_flask.md)
 
 ## 幕
 
