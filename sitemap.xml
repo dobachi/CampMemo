@@ -26,6 +26,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://dobachi.github.io/campmemo/tools/hip_flask/</loc>
+         <lastmod>2022-05-01</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://dobachi.github.io/campmemo/tools/messtin/</loc>
          <lastmod>2022-05-01</lastmod>
          <changefreq>daily</changefreq>
